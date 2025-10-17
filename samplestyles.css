@@ -1,0 +1,57 @@
+body{
+    background-color: #f0f0f0;
+}
+main>section{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+main>section>article{
+    border: 1px solid gray;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+.section-one{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.section-one>article{
+    width: 70%;
+    background-color: #013f23;
+    color: white;
+
+}
+.section-one>article:hover{
+    width: 90%;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    
+}
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 800px){
+   .main-content{
+        background-color: lightslategray;
+        flex-direction: column;
+   }
+   .section-one>article:hover{
+    height: 300px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    
+    }
+    .section-one{
+          width: 100%;
+    
+    }
+    
+}
